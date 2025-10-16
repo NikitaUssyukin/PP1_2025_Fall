@@ -1,0 +1,14 @@
+### Getting to know KBTU computers
+- turn on the PC in front of you
+- on the login screen, choose "other user"
+- use your wsp/uninet credentials to log in
+- open VSCode (the shortcut is on the Desktop)
+- choose "Open folder" in vscode
+- create a new folder on the Desktop/in the Documents, give it any name
+- choose this new folder to open
+- create a new cpp file in vscode
+- write the "hello world" program there
+    - make sure you save the file before the next step (Ctrl + S)
+- open new terminal window
+- compile the program using `g++ filename.cpp`
+- run the program using `./a`

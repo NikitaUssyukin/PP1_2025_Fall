@@ -28,7 +28,7 @@ int main() {
     // 
     for(int i = 0; i < n; ++i) {     // outer loop
         for(int j = 0; j < m; ++j) { // inner loop
-            if(a[i][j] >= a[max_i][max_j]) {
+            if(a[i][j] > a[max_i][max_j]) {
                 max_i = i;
                 max_j = j;
             }
