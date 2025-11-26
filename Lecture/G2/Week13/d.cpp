@@ -1,0 +1,37 @@
+/*
+Given string s, remove all duplicate letters from it
+
+aabc     -> bc
+aabbbc   -> bc
+aaabddba -> "" (empty string)
+*/
+
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+int main() {
+
+    string s;
+    cin >> s;
+
+    stack<char> st;
+    
+    for(int i = 0; i < s.size(); ++i) {
+        if(st.empty()) st.push(s[i]);
+        else if(st.top() == s[i]) st.pop();
+        else st.push(s[i]);
+    }
+
+    string res = "";
+
+    while(!st.empty()) {
+        res = st.top() + res;
+        st.pop();
+    }
+
+    cout << res << endl;
+
+    return 0;
+}
