@@ -14,8 +14,8 @@ int main() {
 
     int a[n];
 
-    // on KBTU PCs, use std=c++11 flag
-    // e.g.: g++ j.cpp -std=c++11
+    // on KBTU PCs, use -std=c++11 flag
+    // e.g.: g++ k.cpp -std=c++11
     
     for (int &x : a) cin >> x;         // modifies elements
     for (int &x : a) x *= 2;           // modifies elements
